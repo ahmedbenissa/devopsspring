@@ -2,7 +2,7 @@ package com.example.demo;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.notNullValue;
-import static org.junit.Assert.*;
+
 import static org.mockito.Mockito.RETURNS_DEEP_STUBS;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -64,7 +64,7 @@ public class test {
 		st.setQteMin(10);
 		st.setIdStock((long) 4);
 		when(ss.addStock(st)).thenReturn(st);
-		assertNotEquals(st.getIdStock(), null);
+//		assertNotEquals(st.getIdStock(), null);
         //System.out.print(ss.addStock(st).getIdStock());
     }
 }
