@@ -60,23 +60,15 @@
 	</dependencies>
 
 	<build>
-		<plugins>
-			<plugin>
+    <plugins>
+    <plugin>
      <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-resources-plugin</artifactId>
-          
-               <configuration>
+    <configuration>
         <mainClass>com.places.Main</mainClass>
-    </configuration>
-         <executions>
-        <execution>
-            <goals>
-                <goal>repackage</goal>
-            </goals>
-        </execution>
-    </executions>
-</plugin> 
-		</plugins>
+    </configuration>  
+    </plugin> 
+    </plugins>
 	</build>
 
 </project>
