@@ -15,7 +15,7 @@ services:
   app:
     depends_on:
       - mysqldb
-    build: ./bezkoder-app
+    build: ./demo-0.0.1
     restart: on-failure
     env_file: ./.env
     ports:
