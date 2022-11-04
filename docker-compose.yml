@@ -15,7 +15,10 @@ services:
   app:
     depends_on:
       - mysqldb
-    image:thedockermaster001/image
+    image: thedockermaster001/image
+    build:
+      context: .
+    container_name: app
     restart: on-failure
     env_file: ./.env
     ports:
