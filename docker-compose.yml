@@ -2,6 +2,7 @@ version: "3.3"
 
 services:
   mysqldb:
+   
     image: mysql:5.7
     restart: unless-stopped
     env_file: ./.env
@@ -20,7 +21,7 @@ services:
       context: .
     container_name: app
     image: thedockermaster001/image
-    
+    build: ./DemoApplication 
     env_file: ./.env
     ports:
       - $SPRING_LOCAL_PORT:$SPRING_DOCKER_PORT
