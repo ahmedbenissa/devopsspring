@@ -21,7 +21,7 @@ services:
       context: .
     container_name: app
     image: thedockermaster001/image
-    build: ./DemoApplication 
+    build: ./com/example/demo/DemoApplication 
     env_file: ./.env
     ports:
       - $SPRING_LOCAL_PORT:$SPRING_DOCKER_PORT
