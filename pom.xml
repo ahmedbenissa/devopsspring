@@ -64,7 +64,13 @@
 			<plugin>
      <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-resources-plugin</artifactId>
-  
+           <configuration>  
+                <archive>  
+                    <manifest>  
+                        <mainClass>com.example.demo</mainClass>  
+                    </manifest>  
+                </archive>  
+            </configuration> 
 </plugin> 
 		</plugins>
 	</build>
