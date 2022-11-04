@@ -67,7 +67,7 @@
     <configuration>
 	    <archive>  
                     <manifest>
-        <mainClass>example.demo.DemoApplication</mainClass>
+        <mainClass>DemoApplication</mainClass>
 		    </manifest>
 	    </archive>
     </configuration>  
