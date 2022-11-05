@@ -65,13 +65,10 @@
      <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-resources-plugin</artifactId>
    <configuration>
-        <archive>
-          <manifest>
-            <addClasspath>true</addClasspath>
-            <classpathPrefix>lib/</classpathPrefix>
+        
+	   <includeSystemScope>true</includeSystemScope>
             <mainClass>com.example.demo.DemoApplication</mainClass>
-          </manifest>
-        </archive>
+        
       </configuration>
     </plugin> 
     </plugins>
