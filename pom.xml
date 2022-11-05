@@ -64,13 +64,15 @@
     <plugin>
      <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-resources-plugin</artifactId>
-    <configuration>
-	    <archive>  
-                    <manifest>
-        <mainClass>com.example.DemoApplication</mainClass>
-		    </manifest>
-	    </archive>
-    </configuration>  
+   <configuration>
+        <archive>
+          <manifest>
+            <addClasspath>true</addClasspath>
+            <classpathPrefix>lib/</classpathPrefix>
+            <mainClass>com.mypackage.MyClass</mainClass>
+          </manifest>
+        </archive>
+      </configuration>
     </plugin> 
     </plugins>
 	</build>
