@@ -64,10 +64,20 @@
     <plugin>
      <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-resources-plugin</artifactId>
+	     <executions>
+      <execution>
+        <phase>package</phase>
+        <goals>
+          <goal>single</goal>
+        </goals>
+      </execution>
    <configuration>
-        
-	   <includeSystemScope>true</includeSystemScope>
+        <archive>
+        <manifest>
+          <addClasspath>true</addClasspath>
             <mainClass>com.example.demo.DemoApplication</mainClass>
+		</manifest>
+	   </archive>
         
       </configuration>
     </plugin> 
