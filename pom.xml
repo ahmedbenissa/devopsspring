@@ -58,7 +58,14 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	<distributionManagement>
+
+ 
+	<build>
+    <plugins>
+    <plugin>
+     <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-resources-plugin</artifactId>
+		<distributionManagement>
   <repository>
    <id>123</id>
    <url>http://192.168.10.17:8081/</url>
@@ -84,14 +91,6 @@
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-deploy-plugin</artifactId>
    </plugin>
-  </plugins>
-	</build>
-	<build>
-    <plugins>
-    <plugin>
-     <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-resources-plugin</artifactId>
-	
      
    <configuration>
         <archive>
