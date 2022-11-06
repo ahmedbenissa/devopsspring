@@ -17,7 +17,12 @@
 		<java.version>8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-	
+	<distributionManagement>
+  <repository>
+   <id>123</id>
+   <url>http://192.168.10.17:8081/</url>
+  </repository>
+ </distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -65,12 +70,7 @@
     <plugin>
      <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-resources-plugin</artifactId>
-		<distributionManagement>
-  <repository>
-   <id>123</id>
-   <url>http://192.168.10.17:8081/</url>
-  </repository>
- </distributionManagement>
+		
  <build>
   <pluginManagement>
    <plugins>
