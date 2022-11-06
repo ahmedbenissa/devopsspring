@@ -20,7 +20,7 @@ services:
     build:
       context: .
     container_name: app
-    image: thedockermaster001/image
+    image: thedockermaster001/springbootimage3.0
     
     env_file: ./.env
     ports:
