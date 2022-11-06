@@ -71,7 +71,7 @@
      <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-resources-plugin</artifactId>
 		
- <build>
+ 
   <pluginManagement>
    <plugins>
     <plugin>
