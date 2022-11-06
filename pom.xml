@@ -60,8 +60,8 @@
 	</dependencies>
 	<distributionManagement>
   <repository>
-   <id>my-repo-id</id>
-   <url>https://my-nexus-repo-address.com</url>
+   <id>123</id>
+   <url>http://192.168.10.17:8081/</url>
   </repository>
  </distributionManagement>
  <build>
