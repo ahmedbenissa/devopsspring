@@ -20,7 +20,7 @@
 	<distributionManagement>
   <repository>
    <id>123</id>
-   <url>http://192.168.10.17:8081/#admin/repository/repositories</url>
+   <url>http://192.168.10.17:8081/repository/123/</url>
   </repository>
  </distributionManagement>
 	<dependencies>
