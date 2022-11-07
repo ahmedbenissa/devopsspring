@@ -46,7 +46,7 @@ import org.mockito.junit.MockitoJUnitRunner;
 @ExtendWith(MockitoExtension.class)
 @DataJpaTest 
 
-@SpringBootTest(classes=DemoApplication.class)
+@SpringBootTest
 public class test {
 	@Mock
 	StockRepository StockRepo;
