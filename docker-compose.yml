@@ -16,6 +16,6 @@ services:
     ports:
        - 8091:8091
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://192.168.10.17:3306/db?autoReconnect=true&useSSL=false
+      SPRING_DATASOURCE_URL: jdbc:mysql://192.168.10.17:3306/test?autoReconnect=true&useSSL=false
     depends_on:
        - docker-mysql
